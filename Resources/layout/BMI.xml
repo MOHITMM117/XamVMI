@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="BMI calculator"
+        android:layout_width="match_parent"
+        android:layout_height="38.5dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_green_light"
+        android:background="@android:color/holo_orange_dark"
+        android:textSize="50px"
+        android:layout_marginTop="0.0dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="33.0dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="@android:dimen/app_icon_size">
+
+
+        <TextView
+            android:text="Weight(KG)"
+            android:layout_width="120.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="40px"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="46.0dp"
+            android:id="@+id/editTextweight"
+            android:hint="Enter your weight in the kgs "
+            android:clickable="true"
+            android:inputType="none|numberDecimal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="33.0dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginBottom="@android:dimen/app_icon_size">
+
+
+        <TextView
+            android:text="Height(M)"
+            android:layout_width="120.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="40px"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="46.0dp"
+            android:id="@+id/editTextHeight"
+            android:hint="Enter your Height in the kgs "
+            android:inputType="none|numberDecimal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="33.0dp"
+        android:id="@+id/linearLayout3"
+        android:layout_marginBottom="@android:dimen/app_icon_size">
+
+
+        <TextView
+            android:text="Result"
+            android:layout_width="120.5dp"
+            android:layout_height="27.5dp"
+            android:id="@+id/textView4"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="40px"/>
+        <EditText
+            android:layout_width="241.0dp"
+            android:layout_height="48.0dp"
+            android:id="@+id/editResult"
+            android:background="@android:color/holo_orange_light" />
+
+
+    </LinearLayout>
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculate"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        style="@android:style/Holo.ButtonBar" />
+    <TextView
+        android:text="cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMessage"
+        android:textSize="20dip" />
+    <ImageView
+        android:src="@android:drawable/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1" />
+
+
+</LinearLayout>
